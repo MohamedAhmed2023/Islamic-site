@@ -1,0 +1,573 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+
+
+section {
+    padding: 70px 0;
+
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #7e57c2;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: 'cairo-bold';
+}
+
+
+section h3::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+section h3::before {
+    width: 100px;
+    bottom: 0px;
+}
+
+/* navbar */
+
+
+.dropdown-item {
+    background-color: rgba(72, 71, 71, 0.2);
+    color: #fff;
+    direction: rtl !important;
+    text-align: right;
+}
+
+.dropdown-menu {
+    background-color: rgba(72, 71, 71, 0.2);
+    color: #fff;
+    direction: rtl !important;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    font-family: 'cairo-bold';
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 17px;
+
+
+}
+
+.nav-link:hover {
+    border-bottom: 2px white solid;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'thuluth-decorated';
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+@media (max-width:992px) {
+    .navbar ul li {
+        /* background-color: rgb(66, 59, 59, 0.2); */
+        background-color: rgba(72, 71, 71, 0.2);
+
+    }
+
+    .dropdown-item {
+        background-color: rgba(72, 71, 71, 0.2);
+        color: #fff;
+        direction: rtl !important;
+    }
+
+    .dropdown-menu {
+        background-color: rgba(72, 71, 71, 0.2);
+        color: #fff;
+        direction: rtl !important;
+
+    }
+
+    .p-main {
+        font-size: 50px !important;
+
+    }
+
+    .navbar ul li a {
+        font-size: 20px !important;
+    }
+
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .surah-popup .ayat p {
+        width: 100%;
+    }
+
+    .main .container {
+        min-height: 50vh !important;
+        width: 100%;
+    }
+
+    .main .title h2 {
+        font-size: 25px !important;
+    }
+
+    .main .title {
+        position: absolute;
+        transform: translate(-10%) !important;
+        color: #fff;
+    }
+
+}
+
+/**-* Main Section ***/
+
+.main {
+    background: url(images/background\ home.jpeg) center center/cover no-repeat;
+    min-height: 70vh !important;
+    padding: 0;
+}
+
+.main .container {
+    min-height: 90vh;
+}
+
+.main .title {
+    position: absolute;
+    top: 30%;
+    transform: translate(-75%);
+    color: #fff;
+    text-align: center;
+}
+
+.main .title h2 {
+    font-size: 40px;
+    font-family: 'cairo-bold';
+    padding-bottom: 10px;
+}
+
+
+
+.a-title-1,
+.a-title-2 {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'cairo-bold';
+    margin-top: 20px;
+}
+
+
+.a-title-1::after {
+    content: ">";
+    width: 20px;
+    margin: 0 8px;
+}
+
+.a-title-1:hover {
+    color: #7e57c2;
+}
+
+.a-title-2:hover {
+    color: #7e57c2;
+}
+
+.title .btn {
+    border: 2px solid#fff;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: .5s all ease-in-out;
+    padding: 5px 15px;
+    font-family: 'cairo-bold';
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.title .btn svg,
+.title .btn i,
+.title .btn .svg:not(:root).svg-inline--fa,
+.title .btn .svg-inline--fa.fa-w-6 {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.title .btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: .3s all ease-in-out;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.title .btn:hover {
+    color: #232323;
+}
+
+.title .btn:hover::after {
+    width: 100%;
+}
+
+/* strat lecture */
+.lecturs {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    border: none !important;
+    border-radius: 20px;
+}
+
+.card-group {
+    gap: 30px;
+    margin: 100px 0;
+
+}
+
+.card-title {
+    color: #7e57c2;
+}
+
+.card iframe {
+    height: 230px !important;
+    border-radius: 10px;
+}
+
+
+.card-text a {
+    text-decoration: none;
+    color: #232323;
+    border-bottom: #232323 2px solid;
+}
+
+.card-text a:hover {
+    color: #7e57c2;
+    border-bottom: #7e57c2 2px solid;
+}
+
+.card-text a::after {
+    content: ">>";
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+
+.card-body {
+    text-align: start !important;
+    font-size: 16px !important;
+    font-family: 'cairo-bold' !important;
+}
+
+/* End lecture */
+
+.heading-two {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid #7e57c2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.heading-two::before,
+.heading-two::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #9575cd;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.heading-two::before {
+    left: -30px;
+}
+
+.heading-two::after {
+    right: -30px;
+}
+
+.heading-two:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+}
+
+.heading-two:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+}
+
+.heading-two:hover {
+    color: white;
+    border: 2px solid white;
+    transition: .3s ease-in-out;
+    background-color: #7e57c2;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #7e57c2;
+}
+
+.Upper-footer {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    font-family: 'cairo-bold';
+    color: #fff;
+    padding: 50px 10px;
+
+}
+
+.Upper-footer h4 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+
+.content ul li {
+    list-style: none;
+    margin: 12px 0;
+    font-size: 20px;
+    color: rgb(242, 226, 226);
+
+}
+
+.content ul li a {
+    text-decoration: none;
+    list-style: none;
+    margin: 12px 0;
+    font-size: 20px;
+    color: rgb(242, 226, 226);
+}
+
+.content ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.p-contect {
+    width: 370px;
+    font-size: 17px;
+    color: rgb(242, 226, 226);
+}
+
+.mosque-img {
+    width: 250px;
+    margin-right: 100px;
+}
+
+@media (max-width:992px) {
+
+    .Upper-footer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .mosque-img {
+        width: 250px;
+        margin-right: 1px;
+    }
+}
+
+
+/* responsive mobile */
+
+
+@media (max-width:567px) {
+
+    .navbar ul li a {
+        font-size: 13px !important;
+    }
+
+    .navbar-brand {
+        font-size: 20px !important;
+    }
+
+    .navbar-toggler {
+        font-size: 18px !important;
+        color: white !important;
+    }
+
+    .main .title h2 {
+        font-size: 17px !important;
+    }
+
+    .perant-links a {
+        font-size: 13px !important;
+    }
+
+    .title {
+        margin-top: 50px !important;
+        margin-right: 40px;
+    }
+
+    .heading-two {
+        font-size: 17px;
+    }
+
+    Section .hadithContainer {
+        width: 80% !important;
+        margin: auto;
+    }
+
+    .hadith .buttons {
+        width: 80% !important;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .hadith .buttons div {
+        font-size: 10px !important;
+    }
+
+    .mosque-img {
+        width: 150px;
+    }
+
+    .Upper-footer h4 {
+        font-size: 20px !important;
+    }
+
+    .p-contect {
+        font-size: 14px !important;
+        width: 200px;
+    }
+
+    .content ul li a {
+        font-size: 15px;
+    }
+
+    .main {
+        width: 100% !important;
+    }
+
+
+}
+
+.navbar-toggler {
+    font-size: 25px !important;
+    color: white !important;
+}
+
+/* responsive tablet */
+
+@media (min-width:568px) and (max-width:992px) {
+
+    .navbar ul li a {
+        font-size: 18px !important;
+    }
+
+    .navbar ul li {
+        z-index: 10000;
+    }
+
+    .navbar-brand {
+        font-size: 35px !important;
+    }
+
+    .navbar-toggler {
+        font-size: 35px !important;
+        color: #fff;
+    }
+
+    .main .title h2 {
+        font-size: 18px !important;
+    }
+
+    .perant-links {
+        margin-right: 50px;
+    }
+
+    .perant-links a {
+        font-size: 15px !important;
+    }
+
+    .title {
+        margin-top: 50px !important;
+    }
+
+    .heading-two {
+        font-size: 30px;
+    }
+
+    Section .hadithContainer {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .hadith .buttons {
+        width: 100% !important;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .hadith .buttons div {
+        font-size: 10px !important;
+    }
+
+    .mosque-img {
+        width: 150px;
+    }
+
+    .Upper-footer h4 {
+        font-size: 15px !important;
+    }
+
+    .p-contect {
+        font-size: 14px !important;
+        width: 200px;
+    }
+
+    .content ul li {
+        font-size: 13px;
+    }
+
+    .main {
+        width: 100% !important;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+}

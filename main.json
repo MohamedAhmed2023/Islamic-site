@@ -1,0 +1,88 @@
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+      "timings": {
+        "الفجر": "03:43",
+        "الشروق": "05:17",
+        "الظهر": "11:53",
+        "العصر": "15:29",
+        "المغرب": "18:29",
+        "العشاء": "19:59"
+      },
+      "date": {
+        "readable": "26 Apr 2023",
+        "timestamp": "1682485200",
+        "hijri": {
+          "date": "05-10-1444",
+          "format": "DD-MM-YYYY",
+          "day": "05",
+          "weekday": {
+            "en": "Al Arba'a",
+            "ar": "الاربعاء"
+          },
+          "month": {
+            "number": 10,
+            "en": "Shawwāl",
+            "ar": "شَوّال"
+          },
+          "year": "1444",
+          "designation": {
+            "abbreviated": "AH",
+            "expanded": "Anno Hegirae"
+          },
+          "holidays": [
+            
+          ]
+        },
+        "gregorian": {
+          "date": "26-04-2023",
+          "format": "DD-MM-YYYY",
+          "day": "26",
+          "weekday": {
+            "en": "Wednesday"
+          },
+          "month": {
+            "number": 4,
+            "en": "April"
+          },
+          "year": "2023",
+          "designation": {
+            "abbreviated": "AD",
+            "expanded": "Anno Domini"
+          }
+        }
+      },
+      "meta": {
+        "latitude": 30.079694,
+        "longitude": 31.323437,
+        "timezone": "Africa/Cairo",
+        "method": {
+          "id": 8,
+          "name": "Gulf Region",
+          "params": {
+            "Fajr": 19.5,
+            "Isha": "90 min"
+          },
+          "location": {
+            "latitude": 24.1323638,
+            "longitude": 53.3199527
+          }
+        },
+        "latitudeAdjustmentMethod": "ANGLE_BASED",
+        "midnightMode": "STANDARD",
+        "school": "STANDARD",
+        "offset": {
+          "Imsak": 0,
+          "Fajr": 0,
+          "Sunrise": 0,
+          "Dhuhr": 0,
+          "Asr": 0,
+          "Maghrib": 0,
+          "Sunset": 0,
+          "Isha": 0,
+          "Midnight": 0
+        }
+      }
+    }
+  }

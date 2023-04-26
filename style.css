@@ -1,0 +1,768 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+
+section {
+    padding: 70px 0;
+
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #7e57c2;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: 'cairo-bold';
+}
+
+
+section h3::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+section h3::before {
+    width: 100px;
+    bottom: 0px;
+}
+
+/* navbar */
+
+.dropdown-item {
+    background-color: rgba(72, 71, 71, 0.2);
+    color: #fff;
+    direction: rtl !important;
+    text-align: right;
+}
+
+.dropdown-menu {
+    background-color: rgba(72, 71, 71, 0.2);
+    color: #fff;
+    direction: rtl !important;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    font-family: 'cairo-bold';
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 17px;
+
+
+}
+
+.nav-link:hover {
+    border-bottom: 2px white solid;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'thuluth-decorated';
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+@media (max-width:992px) {
+    .navbar ul li {
+        /* background-color: rgb(66, 59, 59, 0.2); */
+        /* background-color: rgba(72, 71, 71, 0.2); */
+
+    }
+
+    .dropdown-item {
+        background-color: rgba(72, 71, 71, 0.2);
+        color: #fff;
+        direction: rtl !important;
+    }
+
+    .dropdown-menu {
+        background-color: rgba(72, 71, 71, 0.2);
+        color: #fff;
+        direction: rtl !important;
+
+    }
+
+    .p-main {
+        font-size: 50px !important;
+
+    }
+
+    .navbar ul li a {
+        font-size: 20px !important;
+    }
+
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .surah-popup .ayat p {
+        width: 100%;
+    }
+
+    .main .title h2 {
+        font-size: 25px !important;
+        margin-top: 50px !important;
+    }
+
+}
+
+
+
+/* end navbar */
+
+/**-* Main Section ***/
+.main {
+    background: url(images/background\ home.jpeg) center center/cover no-repeat;
+    padding: 0;
+}
+
+.main .container {
+    min-height: 100vh;
+}
+
+.title {
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+}
+
+.main .title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.main .title h2 {
+    line-height: 1.9;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'cairo-bold';
+}
+
+.title .btn {
+    border: 2px solid#fff;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: .5s all ease-in-out;
+    padding: 5px 15px;
+    font-family: 'cairo-bold';
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.navbar-toggler {
+    font-size: 25px !important;
+    color: white !important;
+}
+
+
+
+.title .btn svg,
+.title .btn i,
+.title .btn .svg:not(:root).svg-inline--fa,
+.title .btn .svg-inline--fa.fa-w-6 {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.title .btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: .3s all ease-in-out;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.title .btn:hover {
+    color: #232323;
+}
+
+.title .btn:hover::after {
+    width: 100%;
+}
+
+
+/*** Quran Section  ****/
+
+.quran {
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+}
+
+.surhasContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.surhasContainer .surah {
+    min-width: 12em;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    color: #232323;
+    font-size: 17px;
+    margin: 7px auto;
+    position: relative;
+    padding: 5px;
+}
+
+.surhasContainer .surah:hover {
+    color: white;
+    background: #9575cd;
+
+}
+
+/* section download quran */
+
+.card {
+
+    font-family: 'cairo-bold';
+    transition: .3s ease-in;
+    border-radius: 20px !important;
+    border: none;
+}
+
+.p-quran {
+    color: rgb(53, 33, 33) !important;
+    text-align: start !important;
+    font-size: 18px !important;
+    font-family: 'cairo-bold' !important;
+}
+
+
+.quran_pdf1,
+.quran_pdf2,
+.quran_pdf3 {
+    color: #7e57c2;
+    text-decoration: none;
+}
+
+.quran_pdf1:hover {
+    color: blue;
+}
+
+.quran_pdf2:hover {
+    color: green;
+}
+
+.quran_pdf3:hover {
+    color: burlywood;
+}
+
+.img-quran {
+    border-radius: 20px !important;
+    transition: .2s ease-in-out;
+    height: 50vh;
+    width: 90%;
+}
+
+
+/*** Pop up *****/
+.surah-popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    overflow-y: scroll;
+    transform: translateY(100%);
+    font-family: 'Amiri', serif;
+}
+
+.surah-popup.active {
+    transform: translateY(0);
+    transition: .7s transform ease-in-out;
+}
+
+.surah-popup::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+}
+
+.surah-popup::-webkit-scrollbar-thumb {
+    background-color: #424242;
+}
+
+.close-popup {
+    position: sticky;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+    background-color: #424242;
+}
+
+.surah-popup .ayat {
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    margin-right: 40px;
+    color: #121212;
+    text-align: center;
+    font-family: 'Amiri', serif;
+
+}
+
+
+
+.surah-popup {
+    background-color: #424242;
+}
+
+.surah-popup .ayat p {
+    line-height: 2;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 5px 5px;
+    padding: 20px;
+    background-color: #2c2b2b;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Amiri', serif;
+    transition: .3s ease-in;
+}
+
+
+
+/* lectures */
+
+.heading-two {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid #7e57c2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.heading-two::before,
+.heading-two::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #9575cd;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.heading-two::before {
+    left: -30px;
+}
+
+.heading-two::after {
+    right: -30px;
+}
+
+.heading-two:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+}
+
+.heading-two:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+}
+
+.heading-two:hover {
+    color: white;
+    border: 2px solid white;
+    transition: .3s ease-in-out;
+    background-color: #7e57c2;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #7e57c2;
+}
+
+.Upper-footer {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    font-family: 'cairo-bold';
+    color: #fff;
+    padding: 50px 10px;
+
+}
+
+.Upper-footer h4 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+
+.content ul li {
+    list-style: none;
+    margin: 12px 0;
+    font-size: 20px;
+    color: rgb(242, 226, 226);
+
+}
+
+.content ul li a {
+    text-decoration: none;
+    list-style: none;
+    margin: 12px 0;
+    font-size: 20px;
+    color: rgb(242, 226, 226);
+}
+
+.content ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.p-contect {
+    width: 370px;
+    font-size: 17px;
+    color: rgb(242, 226, 226);
+}
+
+.mosque-img {
+    width: 250px;
+    margin-right: 100px;
+}
+
+@media (max-width:992px) {
+
+    .Upper-footer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .mosque-img {
+        width: 250px;
+        margin-right: 1px;
+    }
+}
+
+.navbar-toggler i {
+    color: #fff !important;
+}
+
+
+/*** Pray Time ***/
+.pray .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 250px;
+    min-height: 220px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 20px;
+    margin: 20px auto;
+}
+
+.card .circle {
+    position: relative;
+
+}
+
+.circle svg {
+    width: 210px;
+    height: 210px;
+}
+
+.circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: #7e57c2;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 2;
+    stroke-dashoffset: 1000;
+    animation: dash 2s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.circle .praytime {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #7e57c2;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.card p {
+    color: #7e57c2;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+/* responsive mobile */
+
+
+@media (max-width:567px) {
+
+    .navbar ul li a {
+        font-size: 13px !important;
+    }
+
+    .navbar-brand {
+        font-size: 20px !important;
+    }
+
+    .navbar-toggler {
+        font-size: 18px !important;
+        color: white !important;
+    }
+
+    .main .title h2 {
+        font-size: 25px !important;
+    }
+
+    .perant-links a {
+        font-size: 13px !important;
+    }
+
+    .title {
+        margin-top: 50px !important;
+    }
+
+    .heading-two {
+        font-size: 17px;
+    }
+
+    .mosque-img {
+        width: 150px;
+    }
+
+    .Upper-footer h4 {
+        font-size: 20px !important;
+    }
+
+    .p-contect {
+        font-size: 14px !important;
+        width: 200px;
+    }
+
+    .content ul li a {
+        font-size: 15px;
+    }
+
+    .main {
+        width: 100% !important;
+    }
+
+    .title .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .surhasContainer .surah {
+        min-width: 8em;
+    }
+
+    .card-group>.card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .up {
+        width: 50px !important;
+        height: 34px !important;
+        background-color: #7e57c2;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 20px !important;
+        position: fixed;
+        bottom: 0;
+        margin-left: 30px !important;
+        z-index: 2000;
+        animation-iteration-count: infinite;
+    }
+
+    .img-quran {
+        width: 100%;
+    }
+
+
+}
+
+/* responsive tablet */
+
+
+@media (min-width:568px) and (max-width:992px) {
+
+    .navbar ul li a {
+        font-size: 18px !important;
+    }
+
+    .navbar ul li {
+        z-index: 10000;
+    }
+
+    .navbar-brand {
+        font-size: 35px !important;
+    }
+
+    .navbar-toggler {
+        font-size: 35px !important;
+        color: #fff;
+    }
+
+    .main .title h2 {
+        font-size: 40px !important;
+    }
+
+    .perant-links {
+        margin-right: 50px;
+    }
+
+    .perant-links a {
+        font-size: 15px !important;
+    }
+
+    .title {
+        margin-top: 50px !important;
+    }
+
+    .heading-two {
+        font-size: 30px;
+    }
+
+    Section .hadithContainer {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .hadith .buttons {
+        width: 100% !important;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .hadith .buttons div {
+        font-size: 10px !important;
+    }
+
+    .mosque-img {
+        width: 150px;
+    }
+
+    .Upper-footer h4 {
+        font-size: 22px !important;
+    }
+
+    .p-contect {
+        font-size: 14px !important;
+        width: 200px;
+    }
+
+    .content ul li {
+        font-size: 13px;
+    }
+
+    .main {
+        width: 100% !important;
+    }
+
+    .card-group>.card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .up {
+        z-index: 2000;
+    }
+
+}
+
+/* up */
+
+
+.up {
+    width: 71px;
+    height: 57px;
+    background-color: #7e57c2;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 36px;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    animation-iteration-count: infinite;
+}
+
+.up a {
+    color: white;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الطريق الي الله</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.fontstatic.com/f=cairo-bold"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.fontstatic.com/f=thuluth-decorated"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fonts/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Section -->
+    <header id="header" class="header">
+      <nav
+        class="navbar navbar-expand-lg animate__animated animate__zoomIn animate__slow"
+      >
+        <div class="container">
+          <a class="navbar-brand fs-3" href="#" onclick="chang()"
+            >الطريق الي الله</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الصفحه الرئيسيه
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="hadith/hadith.html"
+                  >الأحاديث</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="Azkar/azkarindex.html"
+                  >التسبيح والاذكار</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="lecture/lecture.html"
+                  >المحاضرات</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="title animate__animated animate__zoomIn animate__slow">
+          <h2>
+            مرحبا بك في موقع
+            <br />الطريق الي الله الإسلامي
+          </h2>
+          <button id="#quran" class="btn">
+            التصفح الان
+            <i class="fas fa-caret-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Quran Section -->
+    <section
+      id="quran"
+      class="quran animate__animated animate__fadeInUpBig animate__delay-3s"
+    >
+      <h3 class="heading-two">الْقُرْآن الْكَرِيْم</h3>
+      <div class="container">
+        <div class="surhasContainer"></div>
+      </div>
+    </section>
+    <!-- Pop Up -->
+    <div class="surah-popup">
+      <div class="close-popup">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="ayat"></div>
+    </div>
+    <!-- Download quran section -->
+    <section class="lecture">
+      <h3 class="heading-two">تحميل القرآن الكريم بصيغة PDF</h3>
+      <div class="container">
+        <div class="card-group gap-4">
+          <div class="card">
+            <img
+              class="img-quran"
+              src="images/blue.png"
+              alt="مصحف المدينة المنورة"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  class="quran_pdf1"
+                  download="Quran/القران الكريم النسخه الزرقاء.pdf"
+                  href="Quran/القران الكريم النسخه الزرقاء.pdf"
+                  >مصحف المدينة المنورة الأزرق</a
+                >
+              </h5>
+              <p class="p-quran">
+                مصحف المدينة المنورة العادي باللون الأزرق (quran karim maktoub)
+                تمت طباعته في مجمع الملك فهد في المدينة المنورة .
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-quran"
+              src="images/images g.png"
+              alt="مصحف المدينة المنورة الاخضر"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  class="quran_pdf2"
+                  download="Quran/القران الكريم  النسخه الخضراء.pdf"
+                  href="Quran/القران الكريم  النسخه الخضراء.pdf"
+                  >مصحف المدينة المنورة الأخضر
+                </a>
+              </h5>
+              <p class="p-quran">
+                مصحف المدينة المنورة العادي باللون الأخضر تمت طباعته في مجمع
+                الملك فهد في المدينة المنورة .
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-quran"
+              src="images/color.png"
+              alt="مصحف المدينة المنورة الأزرق"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  class="quran_pdf3"
+                  download="Quran/مصحف التجويد الملون.pdf"
+                  href="https://drive.google.com/file/d/1jc7dVYqWltZRTf_C5lCBb2bNhKOY0El5/view?usp=sharing"
+                  >مصحف التجويد الملون</a
+                >
+              </h5>
+              <p class="p-quran">
+                مصحف التجويد الملون مكتوب بالرسم العثماني بثلاثة ألوان الأزرق و
+                الخضر و الأحمر بتدرجاته و التي تشمل 28 حكما تجويديا .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="up animate__animated animate__shakeY animate__slow">
+      <a href="#header"
+        ><i class="fa-solid fa-arrow-up animate__animated animate__shakeY"></i
+      ></a>
+    </div>
+    <!-- pray -->
+    <section class="pray">
+      <h3 class="heading-two">اوقات الصلاه</h3>
+      <div class="container">
+        <div class="cards">
+          <div class="cardd">
+            <div class="circle">
+              <svg>
+                <Circle cx="100" cy="100" r="100"></Circle>
+              </svg>
+              <!-- <div class="praytime">2:30</div> -->
+            </div>
+            <p class="p-pray">Sunset</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end pray -->
+    <footer>
+      <div class="container">
+        <div class="Upper-footer">
+          <div class="content">
+            <h4>أقسام الموقع</h4>
+            <ul>
+              <li><a href="#quran">القران الكريم</a></li>
+              <li><a href="hadith/hadith.html">الاحاديث الشريفه</a></li>
+              <li><a href="Azkar/azkarindex.html">الاذكار والتسابيح</a></li>
+              <li><a href="lecture/lecture.html">المحاضرات</a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h4>روابط تهمكم</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://books-library.website/c-ALMSAHF-ALSHRIFH_20-download"
+                  >مصاحف مصورة pdf</a
+                >
+              </li>
+              <li>
+                <a href="https://surahquran.com/pdf-tafseer-books.html"
+                  >أفضل كتب التفسير</a
+                >
+              </li>
+              <li>
+                <a href="https://surahquran.com/pdf-hadith-books.html"
+                  >كتب الحديث الستة</a
+                >
+              </li>
+              <li>
+                <a href="https://www.almrsal.com/post/419182"
+                  >أفضل كتب التاريخ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h4>نبذة عن موقعنا</h4>
+            <p class="p-contect">
+              إن موقع الطريق الي الله هو موقع اسلامي على مناهج الكتاب و السنة
+              يقدم القرآن الكريم مكتوب بعدة روايات بالاضافة للعديد من الاحاديث و
+              اذكار الصباح والمساء والتسبيح ويمكن تصفح قسم المحاضرات كما يوجد
+              العديد من الشيوخ والدعاء الي الله
+            </p>
+          </div>
+          <div class="content">
+            <img class="mosque-img" src="images/mosque.png" alt="" />
+          </div>
+        </div>
+        <div class="lower-footer"></div>
+      </div>
+    </footer>
+    <!-- Js File-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="fonts/all.min.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
